@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<title>egou-right</title>
+<title>Eshop-right</title>
 </head>
 <body>
   	    <div class="box-positon">
@@ -14,8 +14,8 @@
         <div class="welcom-con">
         	 <div class="we-txt">
              	  <p>
-                  欢迎使用egou的管理系统！<br />
-                  egou的程序版本： egouv1.0 【<a href="http://localhost:8080" target="_blank">查看最新版本</a>】<br />
+                  欢迎使用Eshop的管理系统！<br />
+                  Eshop的程序版本： Eshopv1.0 【<a href="http://localhost:8080" target="_blank">查看最新版本</a>】<br />
                   您上次登录的时间是：2014-10-15 <br />
                   已用内存：<span style="color:#0078ff;">100MB</span>&nbsp;&nbsp;&nbsp;&nbsp;剩余内存：<span style="color:#ff8400;">100MB </span>&nbsp;&nbsp;&nbsp;&nbsp;最大内存：<span style="color:#00ac41;">200MB</span>
                   </p>

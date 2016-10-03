@@ -6,7 +6,7 @@
 		</span>
 	</p>
 	<ul class="r uls">
-	<li class="dev">您好,欢迎来到egou商城！</li>
+	<li class="dev">您好,欢迎来到Eshop商城！</li>
 	<li class="dev"><a href="javascript:void(0)" onclick="login()"  title="登陆">[登陆]</a></li>
 	<li class="dev"><a href="javascript:void(0)" onclick="register()" title="免费注册">[免费注册]</a></li>
 	<li class="dev"><a href="javascript:void(0)" onclick="logout()" title="退出">[退出]</a></li>

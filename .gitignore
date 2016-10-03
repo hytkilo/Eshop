@@ -3,3 +3,9 @@
 将删除 .idea/workspace.xml
 将删除 src/main/webapp/res/img/red/
 将删除 target/
+将删除 .idea/artifacts/Eshop_war.xml
+将删除 .idea/artifacts/Eshop_war_exploded.xml
+将删除 .idea/dataSources.ids
+将删除 .idea/dataSources.local.xml
+将删除 src/main/webapp/WEB-INF/classes/net/togogo/Eshopweb1238/core/dao/product/SearchDao.class
+将删除 src/main/webapp/WEB-INF/classes/net/togogo/Eshopweb1238/core/domain/product/SearchTemp.class

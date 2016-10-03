@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="egouweb1238" />
+        <module name="Eshop" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="egouweb1238" target="1.5" />
+      <module name="Eshop" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -8,7 +8,7 @@
 <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 <meta http-equiv="description" content="This is my page">
 
-<title>egou商城-电子商城</title>
+<title>Eshop商城-电子商城</title>
 <%@include file="../common/res.jsp" %>
 <script type="text/javascript">
 //登陆
@@ -82,17 +82,17 @@ $(function () {
 				<li id="pinpai"><b>品牌：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
 					<a href="/product/list/display.do?brandId=1&brandName=依琦莲&typeName=${typeName }&typeId=${typeId}" title="依琦莲">依琦莲</a>
-					<a href="/product/list/display.do?brandId=1&brandName=凯速（KANSOON）&typeName=${typeName }&typeId=${typeId}">凯速（KANSOON）</a>
-					<a href="/product/list/display.do?brandId=1&brandName=梵歌纳（vangona）&typeName=${typeName }&typeId=${typeId}">梵歌纳（vangona）</a>
-					<a href="/product/list/display.do?brandId=1&brandName=菩媞&typeName=${typeName }&typeId=${typeId}" title="菩媞">菩媞</a>
-					<a href="/product/list/display.do?brandId=1&brandName=伽美斯（Jamars）&typeName=${typeName }&typeId=${typeId}" title="伽美斯（Jamars）">伽美斯（Jamars）</a>
-					<a href="/product/list/display.do?brandId=1&brandName=金啦啦&typeName=${typeName }&typeId=${typeId}" title="金啦啦">金啦啦</a>
-					<a href="/product/list/display.do?brandId=1&brandName=伊朵莲&typeName=${typeName }&typeId=${typeId}" title="伊朵莲">伊朵莲</a>
-					<a href="/product/list/display.do?brandId=1&brandName=喜悦瑜伽&typeName=${typeName }&typeId=${typeId}" title="喜悦瑜伽">喜悦瑜伽</a>
-					<a href="/product/list/display.do?brandId=1&brandName=路伊梵（LEFAN）&typeName=${typeName }&typeId=${typeId}" title="路伊梵（LEFAN）">路伊梵（LEFAN）</a>
-					<a href="/product/list/display.do?brandId=1&brandName=来尔瑜伽（LaiErYoGA）&typeName=${typeName }&typeId=${typeId}" title="来尔瑜伽（LaiErYoGA）">来尔瑜伽（LaiErYoGA）</a>
+					<a href="">凯速（KANSOON）</a>
+					<a href="">梵歌纳（vangona）</a>
+					<a href="" title="菩媞">菩媞</a>
+					<a href="" title="伽美斯（Jamars）">伽美斯（Jamars）</a>
+					<a href="" title="金啦啦">金啦啦</a>
+					<a href="" title="伊朵莲">伊朵莲</a>
+					<a href="" title="喜悦瑜伽">喜悦瑜伽</a>
+					<a href="" title="路伊梵（LEFAN）">路伊梵（LEFAN）</a>
+					<a href="" title="来尔瑜伽（LaiErYoGA）">来尔瑜伽（LaiErYoGA）</a>
 				</p></li>
-				<li><b>价格：</b><p>
+				<li id="price"><b>价格：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
 					<a href="javascript:void(0);" title="1-99">0-79</a>
 					<a href="javascript:void(0);" title="100-199">80-199</a>
@@ -101,7 +101,7 @@ $(function () {
 					<a href="javascript:void(0);" title="200-499">500-599</a>
 					<a href="javascript:void(0);" title="200-499">600以上</a>
 				</p></li>
-				<li><b>类型：</b><p>
+				<li id="type"><b>类型：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
 					<a href="/product/list/display.shtml?typeId=2&brandId=${brandId }&brandName=${brandName}&typeName=瑜伽服" title="瑜伽服">瑜伽服</a>
 					<a href="javascript:void(0);" title="瑜伽铺巾">瑜伽铺巾</a>
@@ -109,7 +109,7 @@ $(function () {
 					<a href="javascript:void(0);" title="舞蹈鞋服">舞蹈鞋服</a>
 					<a href="javascript:void(0);" title="瑜伽辅助">瑜伽辅助</a>
 				</p></li>
-				<li><b>材质：</b><p>
+				<li id="feature"><b>材质：</b><p>
 					<span><a href="javascript:void(0);" title="不限" class="here">不限</a></span>
 					<span><a href="javascript:void(0);" title="环保人棉">环保人棉</a></span>
 					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
@@ -118,7 +118,7 @@ $(function () {
 					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
 				</p></li>
 
-				<li><b>适用人群：</b><p>
+				<li id="fitPerson"><b>适用人群：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
 					<a href="javascript:void(0);" title="男士">男士</a>
 					<a href="javascript:void(0);" title="女士">女士</a>
@@ -133,149 +133,6 @@ $(function () {
 			</div>
 			<div class="mt ofc">
 				<ul class="uls i_150x150 x4_150x150b">
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
 					<li>
 						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>

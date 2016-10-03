@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>egou商城_用户中心</title>
+<title>Eshop商城_用户中心</title>
 <%@include file="../common/res.jsp" %>
 </head>
 <body>

@@ -9,7 +9,7 @@
 <meta http-equiv="description" content="This is my page">
 
 
-<title>egou商城-商品详情页</title>
+<title>Eshop商城-商品详情页</title>
 <%@include file="../common/res.jsp" %>
 <style type="text/css">
 .changToRed {

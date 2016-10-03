@@ -3,7 +3,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-<title>登录_egou商城</title>
+<title>登录_Eshop商城</title>
 <%@include file="../common/res.jsp" %>
 </head>
 <body>
@@ -16,7 +16,7 @@
 <div class="sign">
 	<div class="l ad420x205"><a href="#" title="title"><img src="${ctx}/res/img/pic/smallimage-4.jpg" width="400" height="400"/></a></div>
 	<div class="r">
-		<h2 title="登录egou商城">登录egou商城</h2>
+		<h2 title="登录Eshop商城">登录Eshop商城</h2>
 		<form id="jvForm" action="../buyer/index.jsp" method="post">
 			<input type="hidden" name="returnUrl" value="${param.directUrl}"/>
 			<ul class="uls form">

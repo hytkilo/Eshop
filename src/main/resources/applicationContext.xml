@@ -18,7 +18,7 @@
 	能够扫描到用注解编写的组件 ，@Controller注解的组件会被过滤掉
 	use-default-filters="true"，要设置成true，否则，无法扫描到注解的组件
 	-->
-	<context:component-scan base-package="net.togogo.egouweb1238.core"
+	<context:component-scan base-package="net.togogo.eshop.core"
 		use-default-filters="true">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>

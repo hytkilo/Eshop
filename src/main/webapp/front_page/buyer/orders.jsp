@@ -2,7 +2,7 @@
 <%@include file="../common/taglibs.jsp" %>
 <html>
 <head>
-<title>egou商城_用户中心</title>
+<title>Eshop商城_用户中心</title>
 <%@include file="../common/res.jsp" %>
 </head>
 <body>
