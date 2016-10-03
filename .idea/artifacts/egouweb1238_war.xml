@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="egouweb1238:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="egouweb1238.war">
+      <element id="artifact" artifact-name="egouweb1238:war exploded" />
+    </root>
+  </artifact>
+</component>
