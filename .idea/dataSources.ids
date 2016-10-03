@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - Eshop@localhost" uuid="97fffe71-fec5-4986-87f3-016b4f9fc9c3">
+    <database-info product="MySQL" version="5.6.30-1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="Eshop"/>
+      <table id="2" parent="1" name="bbs_addr">
+        <comment>收货地址</comment>
+      </table>
+      <table id="3" parent="1" name="bbs_brand">
+        <comment>品牌</comment>
+      </table>
+      <table id="4" parent="1" name="bbs_buyer">
+        <comment>购买者</comment>
+      </table>
+      <table id="5" parent="1" name="bbs_city">
+        <comment>城市信息表</comment>
+      </table>
+      <table id="6" parent="1" name="bbs_color">
+        <comment>颜色大全</comment>
+      </table>
+      <table id="7" parent="1" name="bbs_detail">
+        <comment>订单详情</comment>
+      </table>
+      <table id="8" parent="1" name="bbs_employee">
+        <comment>员工</comment>
+      </table>
+      <table id="9" parent="1" name="bbs_feature">
+        <comment>属性表</comment>
+      </table>
+      <table id="10" parent="1" name="bbs_img">
+        <comment>图片</comment>
+      </table>
+      <table id="11" parent="1" name="bbs_order">
+        <comment>订单</comment>
+      </table>
+      <table id="12" parent="1" name="bbs_product">
+        <comment>商品</comment>
+      </table>
+      <table id="13" parent="1" name="bbs_province">
+        <comment>省份信息表</comment>
+      </table>
+      <table id="14" parent="1" name="bbs_sku">
+        <comment>最小销售单元</comment>
+      </table>
+      <table id="15" parent="1" name="bbs_town">
+        <comment>区县信息表</comment>
+      </table>
+      <table id="16" parent="1" name="bbs_type">
+        <comment>商品类型</comment>
+      </table>
+      <column id="17" parent="2" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="18" parent="2" name="buyer_id">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="19" parent="2" name="name">
+        <comment>收货人</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="20" parent="2" name="city">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="21" parent="2" name="addr">
+        <comment>收货地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(400)</data-type>
+      </column>
+      <column id="22" parent="2" name="phone">
+        <comment>手机号或是固定电话号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="23" parent="2" name="is_def">
+        <comment>是否默认</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(1)</data-type>
+      </column>
+      <index id="24" parent="2" name="buyer_id">
+        <columns>buyer_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="25" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="26" parent="2" name="bbs_addr_ibfk_1">
+        <columns>buyer_id</columns>
+        <ref-key>~.bbs_buyer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="27" parent="3" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="28" parent="3" name="name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="29" parent="3" name="description">
+        <comment>描述</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="30" parent="3" name="img_url">
+        <comment>图片Url</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="31" parent="3" name="web_site">
+        <comment>品牌网址</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="32" parent="3" name="sort">
+        <comment>排序:最大最排前</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="33" parent="3" name="is_display">
+        <comment>是否可见 1:可见 0:不可见</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <key id="34" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="35" parent="4" name="username">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(18)</data-type>
+      </column>
+      <column id="36" parent="4" name="password">
+        <comment>密码</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="37" parent="4" name="gender">
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="38" parent="4" name="email">
+        <comment>邮箱</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="39" parent="4" name="real_name">
+        <comment>真实名字</comment>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="40" parent="4" name="register_time">
+        <comment>注册时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="41" parent="4" name="province">
+        <comment>省ID</comment>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="42" parent="4" name="city">
+        <comment>市ID</comment>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="43" parent="4" name="town">
+        <comment>县ID</comment>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="44" parent="4" name="addr">
+        <comment>地址</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="45" parent="4" name="is_del">
+        <comment>是否已删除:1:未,0:删除了</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <key id="46" parent="4" name="PRIMARY">
+        <columns>username</columns>
+        <primary>1</primary>
+      </key>
+      <column id="47" parent="5" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="48" parent="5" name="code">
+        <comment>城市编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <column id="49" parent="5" name="name">
+        <comment>城市名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="50" parent="5" name="province">
+        <comment>所属省份编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <key id="51" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="52" parent="6" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="53" parent="6" name="name">
+        <comment>名称</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="54" parent="6" name="parent_id">
+        <comment>父ID为色系</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="55" parent="6" name="img_url">
+        <comment>颜色对应的衣服小图</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="56" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="57" parent="7" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="58" parent="7" name="order_id">
+        <comment>订单ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="59" parent="7" name="product_no">
+        <comment>商品编号</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="60" parent="7" name="product_name">
+        <comment>商品名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="61" parent="7" name="color">
+        <comment> 颜色名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="62" parent="7" name="size">
+        <comment>尺码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(11)</data-type>
+      </column>
+      <column id="63" parent="7" name="sku_price">
+        <comment>商品销售价</comment>
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="64" parent="7" name="amount">
+        <comment>购买数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <index id="65" parent="7" name="fk_order_id">
+        <columns>order_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="66" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="67" parent="7" name="fk_order_id">
+        <columns>order_id</columns>
+        <ref-key>~.bbs_order.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="68" parent="8" name="username">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="69" parent="8" name="password">
+        <comment>密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="70" parent="8" name="degree">
+        <comment>学历</comment>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="71" parent="8" name="email">
+        <comment>邮箱</comment>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="72" parent="8" name="gender">
+        <comment>性别</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="73" parent="8" name="img_url">
+        <comment>图片(头像)</comment>
+        <data-type>varchar(41)</data-type>
+      </column>
+      <column id="74" parent="8" name="phone">
+        <comment>手机</comment>
+        <data-type>varchar(18)</data-type>
+      </column>
+      <column id="75" parent="8" name="real_name">
+        <comment>真实名字</comment>
+        <data-type>varchar(8)</data-type>
+      </column>
+      <column id="76" parent="8" name="school">
+        <comment>毕业学校</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="77" parent="8" name="is_del">
+        <comment>是否删除 1:未删除 0:删除</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <key id="78" parent="8" name="PRIMARY">
+        <columns>username</columns>
+        <primary>1</primary>
+      </key>
+      <column id="79" parent="9" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="80" parent="9" name="name">
+        <comment>名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="81" parent="9" name="value">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="82" parent="9" name="sort">
+        <comment>前台排序</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="83" parent="9" name="is_del">
+        <comment>是否废弃:1:未废弃,0:废弃了</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <key id="84" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="85" parent="10" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="86" parent="10" name="product_id">
+        <comment>商品ID</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="87" parent="10" name="url">
+        <comment>图片URL</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="88" parent="10" name="is_def">
+        <comment>是否默认:0否 1:是</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <index id="89" parent="10" name="product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="90" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="91" parent="10" name="bbs_img_ibfk_1">
+        <columns>product_id</columns>
+        <ref-key>~.bbs_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="92" parent="11" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="93" parent="11" name="oid">
+        <comment>订单号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+      </column>
+      <column id="94" parent="11" name="deliver_fee">
+        <comment>运费</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10,2)</data-type>
+      </column>
+      <column id="95" parent="11" name="payable_fee">
+        <comment>应付金额</comment>
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="96" parent="11" name="total_price">
+        <comment>订单金额</comment>
+        <mandatory>1</mandatory>
+        <data-type>double</data-type>
+      </column>
+      <column id="97" parent="11" name="payment_way">
+        <comment>支付方式 0:到付 1:在线 2:邮局 3:公司转帐</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="98" parent="11" name="payment_cash">
+        <comment>货到付款方式.1现金,2POS刷卡</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="99" parent="11" name="delivery">
+        <comment>送货时间</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="100" parent="11" name="isConfirm">
+        <comment>是否电话确认 1:是  0: 否</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="101" parent="11" name="is_paiy">
+        <comment>支付状态 :0到付1待付款,2已付款,3待退款,4退款成功,5退款失败</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="102" parent="11" name="state">
+        <comment>订单状态 0:提交订单 1:仓库配货 2:商品出库 3:等待收货 4:完成 5待退货 6已退货</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="103" parent="11" name="create_date">
+        <comment>订单生成时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="104" parent="11" name="note">
+        <comment>附言</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="105" parent="11" name="buyer_id">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(18)</data-type>
+      </column>
+      <index id="106" parent="11" name="buyer_id">
+        <columns>buyer_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="107" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="108" parent="11" name="bbs_order_ibfk_1">
+        <columns>buyer_id</columns>
+        <ref-key>~.bbs_buyer.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="109" parent="12" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="110" parent="12" name="no">
+        <comment>商品编号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="111" parent="12" name="name">
+        <comment>商品名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="112" parent="12" name="weight">
+        <comment>重量 单位:克</comment>
+        <data-type>double(11)</data-type>
+      </column>
+      <column id="113" parent="12" name="is_new">
+        <comment>是否新品:0:旧品,1:新品</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="114" parent="12" name="is_hot">
+        <comment>是否热销:0,否 1:是</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="115" parent="12" name="is_commend">
+        <comment>推荐 1推荐 0 不推荐</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="116" parent="12" name="create_time">
+        <comment>添加时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="117" parent="12" name="create_user_id">
+        <comment>添加人ID</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="118" parent="12" name="check_time">
+        <comment>审核时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="119" parent="12" name="check_user_id">
+        <comment>审核人ID</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="120" parent="12" name="is_show">
+        <comment>上下架:0否 1是</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="121" parent="12" name="is_del">
+        <comment>是否删除:0删除,1,没删除</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="122" parent="12" name="type_id">
+        <comment>类型ID</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="123" parent="12" name="brand_id">
+        <comment>品牌ID</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="124" parent="12" name="keywords">
+        <comment>检索关键词</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="125" parent="12" name="sales">
+        <comment>销量</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="126" parent="12" name="description">
+        <comment>商品描述</comment>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="127" parent="12" name="package_list">
+        <comment>包装清单</comment>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="128" parent="12" name="feature">
+        <comment>商品属性集</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="129" parent="12" name="color">
+        <comment>颜色集</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="130" parent="12" name="size">
+        <comment>尺寸集</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="131" parent="12" name="brand_id">
+        <columns>brand_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="132" parent="12" name="type_id">
+        <columns>type_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="133" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="134" parent="12" name="bbs_product_ibfk_1">
+        <columns>type_id</columns>
+        <ref-key>~.bbs_type.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="135" parent="12" name="bbs_product_ibfk_2">
+        <columns>brand_id</columns>
+        <ref-key>~.bbs_brand.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="136" parent="13" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="137" parent="13" name="code">
+        <comment>省份编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <column id="138" parent="13" name="name">
+        <comment>省份名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <key id="139" parent="13" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="140" parent="14" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="141" parent="14" name="product_id">
+        <comment>商品ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="142" parent="14" name="color_id">
+        <comment>颜色ID</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="143" parent="14" name="size">
+        <comment>尺码</comment>
+        <data-type>varchar(5)</data-type>
+      </column>
+      <column id="144" parent="14" name="delive_fee">
+        <comment>运费 默认10元</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="145" parent="14" name="sku_price">
+        <comment>售价</comment>
+        <mandatory>1</mandatory>
+        <data-type>double(20,2)</data-type>
+      </column>
+      <column id="146" parent="14" name="stock_inventory">
+        <comment>库存</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="147" parent="14" name="sku_upper_limit">
+        <comment>购买限制</comment>
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="148" parent="14" name="location">
+        <comment>仓库位置:货架号</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="149" parent="14" name="sku_img">
+        <comment>SKU图片  精确到颜色及尺码对应的图片</comment>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="150" parent="14" name="sku_sort">
+        <comment>前台显示排序</comment>
+        <data-type>int(5)</data-type>
+      </column>
+      <column id="151" parent="14" name="sku_name">
+        <comment>SKU名称</comment>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="152" parent="14" name="market_price">
+        <comment>市场价</comment>
+        <data-type>double(20,2)</data-type>
+      </column>
+      <column id="153" parent="14" name="create_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="154" parent="14" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="155" parent="14" name="create_user_id">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="156" parent="14" name="update_user_id">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="157" parent="14" name="last_status">
+        <comment>0,历史 1最新</comment>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="158" parent="14" name="sku_type">
+        <comment>0:赠品,1普通</comment>
+        <data-type>int(1)</data-type>
+      </column>
+      <column id="159" parent="14" name="sales">
+        <comment>销量</comment>
+        <data-type>int(10)</data-type>
+      </column>
+      <index id="160" parent="14" name="color_id">
+        <columns>color_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="161" parent="14" name="product_id">
+        <columns>product_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="162" parent="14" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="163" parent="14" name="bbs_sku_ibfk_1">
+        <columns>product_id</columns>
+        <ref-key>~.bbs_product.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <foreign-key id="164" parent="14" name="bbs_sku_ibfk_2">
+        <columns>color_id</columns>
+        <ref-key>~.bbs_color.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="165" parent="15" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="166" parent="15" name="code">
+        <comment>区县编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <column id="167" parent="15" name="name">
+        <comment>区县名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="168" parent="15" name="city">
+        <comment>所属城市编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <key id="169" parent="15" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="170" parent="16" name="id">
+        <comment>ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="171" parent="16" name="name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+      </column>
+      <column id="172" parent="16" name="parent_id">
+        <comment>父ID</comment>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="173" parent="16" name="note">
+        <comment>备注,用于google搜索页面描述</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="174" parent="16" name="is_display">
+        <comment>是否可见 1:可见 0:不可见</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <index id="175" parent="16" name="FKA8168A929B5A332">
+        <columns>parent_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="176" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

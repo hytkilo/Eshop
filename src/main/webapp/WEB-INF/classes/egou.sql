@@ -4,7 +4,7 @@ Navicat MySQL Data Transfer
 Source Server         : localhost
 Source Server Version : 50540
 Source Host           : 127.0.0.1:3306
-Source Database       : egou
+Source Database       : Eshop
 
 Target Server Type    : MYSQL
 Target Server Version : 50540

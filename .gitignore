@@ -9,3 +9,8 @@
 将删除 .idea/dataSources.local.xml
 将删除 src/main/webapp/WEB-INF/classes/net/togogo/Eshopweb1238/core/dao/product/SearchDao.class
 将删除 src/main/webapp/WEB-INF/classes/net/togogo/Eshopweb1238/core/domain/product/SearchTemp.class
+将删除 .idea/artifacts/
+将删除 src/main/webapp/META-INF/
+将删除 src/main/webapp/WEB-INF/classes/cn/
+将删除 src/main/webapp/WEB-INF/test-classes/cn/
+将删除 src/test/java/net/
