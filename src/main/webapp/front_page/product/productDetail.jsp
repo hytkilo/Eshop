@@ -35,17 +35,85 @@
 	margin-right: 4px;
 	text-decoration: none;
 }
+.singlesize{
+	border:1px Solid #CC0D21 !important;
+}
+.allow {
+	cursor: pointer;
+	color: #000000;
+	border: 1px dashed #000000;
+	padding: 2px 4px;
+	float: left;
+	margin-right: 4px;
+	text-decoration: none;
+}
 </style>
 </head>
 <script type="text/javascript">
 //加入购物车
-function addCart(){
-	alert("添加购物车成功!");
-}
+$(function () {
+	var a = [];
+	var color = 0;
+	var sizeId = "";
+	var goodId = "";
+	$.get("/product/list/detail.do?id=${param['id']}",function (data) {
+		goodId = ${param['id']};
+		$("#title").append('<h2>'+data.name+'</h2>');
+	$("#detailTab1").append(data.description);
+		a = data.size.split(",");
+		dosize();
+	},"json");
+	selectSize = function (data) {
+	if($(data).hasClass("singlesize")){
+		return;
+	}else {
+		$("#sizes a").removeClass("singlesize");
+		$(data).addClass("singlesize");
+	}
+		sizeId = $(data).text();
+	};
+	dosize = function () {
+		for (o in a){
+			$("#"+a[o]).removeClass().addClass("allow");
+		}
+	};
+	colorToRed = function (data,num) {
+		color = num;
+		if ($(data).hasClass("changToWhite")){
+			$("#colors a").removeClass().addClass("changToWhite");
+		$(data).removeClass("changToWhite").addClass("changToRed");
+		}
+		else return;
+//		data.removeClass("changToWhite").addClass("changToRed");
+	};
+	minus = function () {
+		if ($("#num").val()!=1){
+			$("#num").val(parseInt($("#num").val())-1);
+		}
+	};
+	plus = function () {
+//		alert($("#num").val());
+		$("#num").val(parseInt($("#num").val())+1);
+	};
+	 addCart = function (){
+		 if (color==0){
+			 alert("请选择颜色");
+		 }else if (sizeId==""){
+			 alert("请选择尺码");
+		 }else {
+			 $.get("/product/list/cart.do?goodId="+goodId+"&color="+color+"&sizeId="+sizeId+"&mount="+$("#num").val(),function () {
+
+			 },"json");
+		alert("添加购物车成功!");}
+	};
 //立即购买
-function buy(){
-	window.location.href='cart.jsp';
-}
+	buy = function () {
+		window.location.href='cart.jsp';
+	};
+
+
+});
+
 </script>
 </head>
 <body>
@@ -56,35 +124,35 @@ function buy(){
 <div class="w ofc mt">
 	<div class="l">
 		<div class="showPro">
-			<div class="big"><a id="showImg" class="cloud-zoom" href="${ctx}/res/img/pic/ppp0.jpg" rel="adjustX:10,adjustY:-1"><img alt="" src="${ctx}/res/img/pic/ppp0.jpg"></a></div>
+			<div class="big"><a id="showImg" class="cloud-zooalert(a)m" href="${ctx}/res/img/pic/ppp0.jpg" rel="adjustX:10,adjustY:-1"><img alt="" src="${ctx}/res/img/pic/ppp0.jpg"></a></div>
 		</div>
 	</div>
 	<div class="r" style="width: 640px">
 		<ul class="uls form">
-			<li><h2>依琦莲2014瑜伽服套装新款 瑜珈健身服三件套 广场舞蹈服装 性价比最高的瑜伽服 三件套 送胸垫 支持货到付款</h2></li>
+			<li id="title"></li>
 			<li><label>巴  巴 价：</label><span class="word"><b class="f14 red mr">￥128.00</b>(市场价:<del>￥150.00</del>)</span></li>
 			<li><label>商品评价：</label><span class="word"><span class="val_no val3d4" title="4分">4分</span><var class="blue">(已有888人评价)</var></span></li>
 			<li><label>运　　费：</label><span class="word">10元</span></li>
 			<li><label>库　　存：</label><span class="word" id="stockInventory">100</span><span class="word" >件</span></li>
 			<li><label>选择颜色：</label>
 				<div id="colors" class="pre spec">
-					<a onclick="colorToRed(this,9)" href="javascript:void(0)" title="西瓜红" class="changToRed"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="西瓜红 "><i>西瓜红</i></a>
-					<a onclick="colorToRed(this,11)" href="javascript:void(0)" title="墨绿" class="changToWhite"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="墨绿 "><i>墨绿</i></a>
-					<a onclick="colorToRed(this,18)" href="javascript:void(0)" title="浅粉" class="changToWhite"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="浅粉 "><i>浅粉</i></a>
+					<a onclick="colorToRed(this,9)" href="javascript:void(0);" title="西瓜红" class="changToWhite"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="西瓜红 "><i>西瓜红</i></a>
+					<a onclick="colorToRed(this,11)" href="javascript:void(0);" title="墨绿" class="changToWhite"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="墨绿 "><i>墨绿</i></a>
+					<a onclick="colorToRed(this,18)" href="javascript:void(0);" title="浅粉" class="changToWhite"><img width="25" height="25" data-img="1" src="${ctx}/res/img/pic/ppp00.jpg" alt="浅粉 "><i>浅粉</i></a>
 				</div>
 			</li>
 			<li id="sizes"><label>尺　　码：</label>
-						<a href="javascript:void(0)" class="not-allow"  id="S">S</a>
-						<a href="javascript:void(0)" class="not-allow"  id="M">M</a>
-						<a href="javascript:void(0)" class="not-allow"  id="L">L</a>
-						<a href="javascript:void(0)" class="not-allow"  id="XL">XL</a>
-						<a href="javascript:void(0)" class="not-allow"  id="XXL">XXL</a>
+						<a href="javascript:void(0)" class="not-allow" onclick="selectSize(this)" id="S">S</a>
+						<a href="javascript:void(0)" class="not-allow" onclick="selectSize(this)" id="M">M</a>
+						<a href="javascript:void(0)" class="not-allow" onclick="selectSize(this)" id="L">L</a>
+						<a href="javascript:void(0)" class="not-allow" onclick="selectSize(this)" id="XL">XL</a>
+						<a href="javascript:void(0)" class="not-allow" onclick="selectSize(this)" id="XXL">XXL</a>
 			</li>
 			<li><label>我 要 买：</label>
-				<a id="sub" class="inb arr" style="border: 1px solid #919191;width: 10px;height: 10px;line-height: 10px;text-align: center;" title="减" href="javascript:void(0);" >-</a>
+				<a id="sub" class="inb arr" style="border: 1px solid #919191;width: 10px;height: 10px;line-height: 10px;text-align: center;" title="减" href="javascript:minus();" >-</a>
 				<input id="num" type="text" value="1" name="" size="1" readonly="readonly">
-				<a id="add" class="inb arr" style="border: 1px solid #919191;width: 10px;height: 10px;line-height: 10px;text-align: center;" title="加" href="javascript:void(0);">+</a></li>
-			<li class="submit"><input type="button" value="" class="hand btn138x40" onclick="buy();"/><input type="button" value="" class="hand btn138x40b" onclick="addCart()"/></li>
+				<a id="add" class="inb arr" style="border: 1px solid #919191;width: 10px;height: 10px;line-height: 10px;text-align: center;" title="加" href="javascript:plus();" >+</a></li>
+			<li class="submit"><input type="button" value="" class="hand btn138x40" onclick="buy();"/><input type="button" value="" class="hand btn138x40b" onclick="addCart()" href="javascript:void(0);"/></li>
 		</ul>
 	</div>
 </div>
@@ -97,7 +165,7 @@ function buy(){
 			<a href="javascript:void(0);" title="包装清单" rel="#detailTab3">包装清单</a></em><cite></cite></h2>
 		<div class="box bg_white ofc">
 			<div id="detailTab1" class="detail">
-				<img src="${ctx}/res/img/pic/p800b.jpg" /><img src="${ctx}/res/img/pic/p800a.jpg" /><img src="${ctx}/res/img/pic/p800c.jpg" /><img src="${ctx}/res/img/pic/p800d.jpg" />
+				<%--<img src="${ctx}/res/img/pic/p800b.jpg" /><img src="${ctx}/res/img/pic/p800a.jpg" /><img src="${ctx}/res/img/pic/p800c.jpg" /><img src="${ctx}/res/img/pic/p800d.jpg" />--%>
 			</div>
 			
 			<div id="detailTab2" style="display:none">

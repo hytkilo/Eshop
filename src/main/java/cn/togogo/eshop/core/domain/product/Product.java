@@ -163,6 +163,31 @@ public class Product {
 		this.size = size;
 	}
 
-	
-	
+	@Override
+	public String toString() {
+		return "Product{" +
+				"id=" + id +
+				", no='" + no + '\'' +
+				", name='" + name + '\'' +
+				", weight=" + weight +
+				", is_new=" + is_new +
+				", is_hot=" + is_hot +
+				", is_commend=" + is_commend +
+				", create_time=" + create_time +
+				", create_user_id='" + create_user_id + '\'' +
+				", check_time=" + check_time +
+				", check_user_id='" + check_user_id + '\'' +
+				", is_show=" + is_show +
+				", is_del=" + is_del +
+				", type_id=" + type_id +
+				", brand_id=" + brand_id +
+				", keywords='" + keywords + '\'' +
+				", sales=" + sales +
+				", description='" + description + '\'' +
+				", package_list='" + package_list + '\'' +
+				", feature='" + feature + '\'' +
+				", color='" + color + '\'' +
+				", size='" + size + '\'' +
+				'}';
+	}
 }

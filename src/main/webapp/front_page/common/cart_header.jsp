@@ -1,4 +1,9 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" isELIgnored="false"%>
+<script>
+	$(function () {
+
+	})
+</script>
 <div class="w loc">
 	<div class="h-title">
 		<div class="h-logo"><a href="#"><img src="${ctx}/res/img/pic/logo-1.png" style="height:50px"/></a></div>
@@ -12,7 +17,7 @@
 		<dd class="hidden">
 			<p class="alg_c hidden">购物车中还没有商品，赶紧选购吧！</p>
 			<h3 title="最新加入的商品">最新加入的商品</h3>
-			<ul class="uls">
+			<ul class="uls" id="cart-list">
 				<li>
 					<a href="#" title="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元">
 					<img src="${ctx}/res/img/pic/p50x50.jpg" alt="依琦莲2014瑜伽服套装新 瑜珈健身服三件套 广场舞蹈服装 女瑜伽服送胸垫 长袖紫色 M全场支持货到付款 全网最低价 千人超高好评瑜伽服赶紧抢！全五分好评截图联系客服还返现五元" /></a>

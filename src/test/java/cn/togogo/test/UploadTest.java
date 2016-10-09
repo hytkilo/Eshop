@@ -11,14 +11,12 @@ import org.junit.Test;
 
 import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.WebResource;
-
-
+import org.springframework.web.context.support.XmlWebApplicationContext;
 
 
 public class UploadTest {
 
 	@Test
 	public void testUpload() throws Exception{
-
 	}
 }

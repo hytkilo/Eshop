@@ -12,12 +12,35 @@
 <%@include file="../common/res.jsp" %>
 <script type="text/javascript">
 //登陆
+<%--<li>--%>
+<%--<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>--%>
+		<%--<dl>--%>
+		<%--<!-- dt 10个文字+... -->--%>
+		<%--<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>--%>
+		<%--<!-- dt 25个文字+... -->--%>
+		<%--<dd class="h40">依琦莲2014瑜伽服套装新款</dd>--%>
+		<%--<dd class="orange">￥128.00</dd>--%>
+<%--<dd>北京有货</dd>--%>
+<%--<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>--%>
+		<%--</dl>--%>
+		<%--<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />--%>
+		<%--</li>--%>
 $(function () {
 
 	function login(){
 		window.location.href = "../buyer/login.jsp";
 	}
-});
+	$.get("/product/list/go.do",function (data) {
+		for (o in data){
+			var name = data[o].name;
+			if (name.length>12){
+				name = name.substring(0,12)+'...';
+			}
+			var content="<li><a href='productDetail.jsp?id="+data[o].id+"' title='瑜伽服' target='_blank' class='pic'><img src='${ctx}/res/img/pic/ppp.jpg' alt='瑜伽服' /></a> <dl><dt><a href='productDetail.jsp?id="+data[o].id+"' title='依琦莲2014瑜伽服套装新款' target='_blank'>"+name+"</a></dt> <dd class='h40'>依琦莲2014瑜伽服套装新款</dd> <dd class='orange'>￥128.00</dd> <dd>北京有货</dd> <dd><a href='#' title='加入购物车' class='inb btn70x21 mr'>加入购物车</a></dd> </dl> <img src='${ctx}/res/img/pic/hot.gif' alt='热门' class='type' /> </li>";
+			$("ul[id='listgood']").append(content);
+		}
+	},"json")
+})
 
 
 </script>
@@ -81,49 +104,49 @@ $(function () {
 				</li>
 				<li id="pinpai"><b>品牌：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="/product/list/display.do?brandId=1&brandName=依琦莲&typeName=${typeName }&typeId=${typeId}" title="依琦莲">依琦莲</a>
-					<a href="">凯速（KANSOON）</a>
-					<a href="">梵歌纳（vangona）</a>
-					<a href="" title="菩媞">菩媞</a>
-					<a href="" title="伽美斯（Jamars）">伽美斯（Jamars）</a>
-					<a href="" title="金啦啦">金啦啦</a>
-					<a href="" title="伊朵莲">伊朵莲</a>
-					<a href="" title="喜悦瑜伽">喜悦瑜伽</a>
-					<a href="" title="路伊梵（LEFAN）">路伊梵（LEFAN）</a>
-					<a href="" title="来尔瑜伽（LaiErYoGA）">来尔瑜伽（LaiErYoGA）</a>
+					<a href="/product/list/display.do?brandId=1&brandName=依琦莲&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="依琦莲">依琦莲</a>
+					<a href="/product/list/display.do?brandId=1&brandName=凯速（KANSOON）&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}">凯速（KANSOON）</a>
+					<a href="/product/list/display.do?brandId=1&brandName=梵歌纳（vangona）&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}">梵歌纳（vangona）</a>
+					<a href="/product/list/display.do?brandId=1&brandName=菩媞&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="菩媞">菩媞</a>
+					<a href="/product/list/display.do?brandId=1&brandName=伽美斯（Jamars）&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="伽美斯（Jamars）">伽美斯（Jamars）</a>
+					<a href="/product/list/display.do?brandId=1&brandName=金啦啦&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="金啦啦">金啦啦</a>
+					<a href="/product/list/display.do?brandId=1&brandName=伊朵莲&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="伊朵莲">伊朵莲</a>
+					<a href="/product/list/display.do?brandId=1&brandName=喜悦瑜伽&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="喜悦瑜伽">喜悦瑜伽</a>
+					<a href="/product/list/display.do?brandId=1&brandName=路伊梵（LEFAN）&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="路伊梵（LEFAN）">路伊梵（LEFAN）</a>
+					<a href="/product/list/display.do?brandId=1&brandName=来尔瑜伽（LaiErYoGA）&price=${price}&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="来尔瑜伽（LaiErYoGA）">来尔瑜伽（LaiErYoGA）</a>
 				</p></li>
 				<li id="price"><b>价格：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="javascript:void(0);" title="1-99">0-79</a>
-					<a href="javascript:void(0);" title="100-199">80-199</a>
-					<a href="javascript:void(0);" title="200-499">200-299</a>
-					<a href="javascript:void(0);" title="200-499">300-499</a>
-					<a href="javascript:void(0);" title="200-499">500-599</a>
-					<a href="javascript:void(0);" title="200-499">600以上</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='0-79'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="1-99">0-79</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='80-199'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="100-199">80-199</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='200-299'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="200-499">200-299</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='300-499'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="200-499">300-499</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='500-599'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="200-499">500-599</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price='600以上'&type=${type}&feature=${feature}&fitPerson=${fitPerson}" title="200-499">600以上</a>
 				</p></li>
 				<li id="type"><b>类型：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="/product/list/display.shtml?typeId=2&brandId=${brandId }&brandName=${brandName}&typeName=瑜伽服" title="瑜伽服">瑜伽服</a>
-					<a href="javascript:void(0);" title="瑜伽铺巾">瑜伽铺巾</a>
-					<a href="javascript:void(0);" title="瑜伽垫">瑜伽垫</a>
-					<a href="javascript:void(0);" title="舞蹈鞋服">舞蹈鞋服</a>
-					<a href="javascript:void(0);" title="瑜伽辅助">瑜伽辅助</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=瑜伽服&feature=${feature}&fitPerson=${fitPerson}" title="瑜伽服">瑜伽服</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=瑜伽铺巾&feature=${feature}&fitPerson=${fitPerson}" title="瑜伽铺巾">瑜伽铺巾</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=瑜伽垫&feature=${feature}&fitPerson=${fitPerson}" title="瑜伽垫">瑜伽垫</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=舞蹈鞋服&feature=${feature}&fitPerson=${fitPerson}" title="舞蹈鞋服">舞蹈鞋服</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=瑜伽辅助&feature=${feature}&fitPerson=${fitPerson}" title="瑜伽辅助">瑜伽辅助</a>
 				</p></li>
 				<li id="feature"><b>材质：</b><p>
 					<span><a href="javascript:void(0);" title="不限" class="here">不限</a></span>
-					<span><a href="javascript:void(0);" title="环保人棉">环保人棉</a></span>
-					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
-					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
-					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
-					<span><a href="javascript:void(0);" title="莫代尔">莫代尔</a></span>
+					<span><a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=环保人棉&fitPerson=${fitPerson}" title="环保人棉">环保人棉</a></span>
+					<span><a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=莫代尔&fitPerson=${fitPerson}" title="莫代尔">莫代尔</a></span>
+					<span><a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=莫代尔&fitPerson=${fitPerson}" title="莫代尔">莫代尔</a></span>
+					<span><a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=莫代尔&fitPerson=${fitPerson}" title="莫代尔">莫代尔</a></span>
+					<span><a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=莫代尔&fitPerson=${fitPerson}" title="莫代尔">莫代尔</a></span>
 				</p></li>
 
 				<li id="fitPerson"><b>适用人群：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="javascript:void(0);" title="男士">男士</a>
-					<a href="javascript:void(0);" title="女士">女士</a>
-					<a href="javascript:void(0);" title="儿童">儿童</a>
-					<a href="javascript:void(0);" title="中性">中性</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=${feature}&fitPerson=男士" title="男士">男士</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=${feature}&fitPerson=女士" title="女士">女士</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=${feature}&fitPerson=儿童" title="儿童">儿童</a>
+					<a href="/product/list/display.do?brandId=1&brandName=${brandName}&price=${price}&type=${type}&feature=${feature}&fitPerson=中性" title="中性">中性</a>
 				</p></li>
 			</ul>
 			<div class="sort_type">
@@ -132,20 +155,8 @@ $(function () {
 				<a href="javascript:void(0);" title="上架时间" class="time">上架时间</a>
 			</div>
 			<div class="mt ofc">
-				<ul class="uls i_150x150 x4_150x150b">
-					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
-						<dl>
-							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
-							<!-- dt 25个文字+... -->
-							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
-							<dd class="orange">￥128.00</dd>
-							<dd>北京有货</dd>
-							<dd><a href="#" title="加入购物车" class="inb btn70x21 mr">加入购物车</a></dd>
-						</dl>
-						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
-					</li>
+				<ul class="uls i_150x150 x4_150x150b" id="listgood">
+
 				</ul>
 			<div class="page pb15">
 				<span class="r inb_a page_b">
