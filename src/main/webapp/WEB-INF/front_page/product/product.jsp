@@ -76,7 +76,7 @@ function login(){
 				</li>
 				<li><b>品牌：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="/product/list/display.shtml?brandId=1&brandName=依琦莲&typeName=${typeName }&typeId=${typeId}" title="依琦莲">依琦莲</a>
+					<a href="/product/list/display.thtml?brandId=1&brandName=依琦莲&typeName=${typeName }&typeId=${typeId}" title="依琦莲">依琦莲</a>
 					<a href="javascript:void(0);" title="凯速（KANSOON）">凯速（KANSOON）</a>
 					<a href="javascript:void(0);" title="梵歌纳（vangona）">梵歌纳（vangona）</a>
 					<a href="javascript:void(0);" title="菩媞">菩媞</a>
@@ -98,7 +98,7 @@ function login(){
 				</p></li>
 				<li><b>类型：</b><p>
 					<a href="javascript:void(0);" title="不限" class="here">不限</a>
-					<a href="/product/list/display.shtml?typeId=2&brandId=${brandId }&brandName=${brandName}&typeName=瑜伽服" title="瑜伽服">瑜伽服</a>
+					<a href="/product/list/display.thtml?typeId=2&brandId=${brandId }&brandName=${brandName}&typeName=瑜伽服" title="瑜伽服">瑜伽服</a>
 					<a href="javascript:void(0);" title="瑜伽铺巾">瑜伽铺巾</a>
 					<a href="javascript:void(0);" title="瑜伽垫">瑜伽垫</a>
 					<a href="javascript:void(0);" title="舞蹈鞋服">舞蹈鞋服</a>

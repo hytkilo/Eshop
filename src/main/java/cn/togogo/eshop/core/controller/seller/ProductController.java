@@ -1,4 +1,4 @@
-package cn.togogo.eshop.core.controller;
+package cn.togogo.eshop.core.controller.seller;
 
 import java.io.IOException;
 import java.io.PrintWriter;

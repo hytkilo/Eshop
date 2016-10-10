@@ -101,7 +101,7 @@ function trueBuy(){
 			</table>
 			<div class="page">
 				<span class="l">
-					<input type="button" onclick="window.open('/product/detail.shtml?id=274')" class="hand btn100x26c" title="继续购物" value="继续购物">
+					<input type="button" onclick="window.open('/product/detail.thtml?id=274')" class="hand btn100x26c" title="继续购物" value="继续购物">
 					<input type="button" onclick="clearCart()" class="hand btn100x26c" title="清空购物车" value="清空购物车">
 				</span>
 				<span class="r box_gray">
