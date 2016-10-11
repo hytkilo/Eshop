@@ -1,10 +1,9 @@
-package cn.togogo.eshop.core.controller.customer;
+package cn.togogo.eshop.core.controller.buyer;
 
 import cn.togogo.eshop.core.dao.product.SearchDao;
 import cn.togogo.eshop.core.domain.product.Product;
 import cn.togogo.eshop.core.domain.product.SearchTemp;
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -14,9 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by hyt on 16-10-3.

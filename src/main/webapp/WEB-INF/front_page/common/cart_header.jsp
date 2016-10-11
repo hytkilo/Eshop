@@ -8,7 +8,7 @@
 	    </div>
 	</div>
 	<dl id="cart" class="cart r">
-		<dt><a href="#" title="结算">结算</a>购物车:<b id="">5</b>件</dt>
+		<dt><a href="cart.thtml" title="结算">结算</a>购物车:<b id="">5</b>件</dt>
 		<dd class="hidden">
 			<p class="alg_c hidden">购物车中还没有商品，赶紧选购吧！</p>
 			<h3 title="最新加入的商品">最新加入的商品</h3>

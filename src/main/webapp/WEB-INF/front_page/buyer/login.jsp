@@ -17,7 +17,7 @@
 	<div class="l ad420x205"><a href="#" title="title"><img src="${ctx}/res/img/pic/smallimage-4.jpg" width="400" height="400"/></a></div>
 	<div class="r">
 		<h2 title="登录Eshop商城">登录Eshop商城</h2>
-		<form id="jvForm" action="../buyer/index.jsp" method="post">
+		<form id="jvForm" action="../buyer/index.thtml" method="post">
 			<input type="hidden" name="returnUrl" value="${param.directUrl}"/>
 			<ul class="uls form">
 			<li id="errorName" class="errorTip" style="display:none">${error}</li>

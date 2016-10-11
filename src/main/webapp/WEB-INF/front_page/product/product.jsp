@@ -13,7 +13,7 @@
 <script type="text/javascript">
 //登陆
 function login(){
-	window.location.href = "../buyer/login.jsp";
+	window.location.href = "../buyer/login.thtml";
 }
 </script>
 </head>
@@ -27,39 +27,39 @@ function login(){
 		<div class="box bg_white">
 			<ul class="uls i_150x150 x4_150x150">
 				<li>
-					<a href="productDetail.jsp" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
+					<a href="productDetail.thtml" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
 					<dl>
-						<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
+						<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
 						<dd class="h40">依琦莲2014瑜伽服套装新！</dd>
 						<dd class="orange">￥120 ~ ￥150</dd>
-						<dd><a href="productDetail.jsp" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
+						<dd><a href="productDetail.thtml" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
 					</dl>
 				</li>
 				<li>
-					<a href="productDetail.jsp" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
+					<a href="productDetail.thtml" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
 					<dl>
-						<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
+						<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
 						<dd class="h40">依琦莲2014瑜伽服套装新！</dd>
 						<dd class="orange">￥120 ~ ￥150</dd>
-						<dd><a href="productDetail.jsp" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
+						<dd><a href="productDetail.thtml" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
 					</dl>
 				</li>
 				<li>
-					<a href="productDetail.jsp" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
+					<a href="productDetail.thtml" title="富一代" target="_blank" class="pic"><img src="	${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
 					<dl>
-						<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
+						<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
 						<dd class="h40">依琦莲2014瑜伽服套装新！</dd>
 						<dd class="orange">￥120 ~ ￥150</dd>
-						<dd><a href="productDetail.jsp" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
+						<dd><a href="productDetail.thtml" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
 					</dl>
 				</li>
 				<li>
-					<a href="productDetail.jsp" title="富一代" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
+					<a href="productDetail.thtml" title="富一代" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="依琦莲2014瑜伽服套装新" /></a>
 					<dl>
-						<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
+						<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新" target="_blank">依琦莲2014瑜伽服套装新</a></dt>
 						<dd class="h40">依琦莲2014瑜伽服套装新！</dd>
 						<dd class="orange">￥120 ~ ￥150</dd>
-						<dd><a href="productDetail.jsp" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
+						<dd><a href="productDetail.thtml" title="立即抢购" class="inb btn70x21 mr">立即抢购</a></dd>
 					</dl>
 				</li>
 			</ul>
@@ -129,10 +129,10 @@ function login(){
 			<div class="mt ofc">
 				<ul class="uls i_150x150 x4_150x150b">
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -142,10 +142,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -155,10 +155,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -168,10 +168,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -181,10 +181,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -194,10 +194,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -207,10 +207,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -220,10 +220,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -233,10 +233,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -246,10 +246,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -259,10 +259,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>
@@ -272,10 +272,10 @@ function login(){
 						<img src="${ctx}/res/img/pic/hot.gif" alt="热门" class="type" />
 					</li>
 					<li>
-						<a href="productDetail.jsp" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
+						<a href="productDetail.thtml" title="瑜伽服" target="_blank" class="pic"><img src="${ctx}/res/img/pic/ppp.jpg" alt="瑜伽服" /></a>
 						<dl>
 							<!-- dt 10个文字+... -->
-							<dt><a href="productDetail.jsp" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
+							<dt><a href="productDetail.thtml" title="依琦莲2014瑜伽服套装新款" target="_blank">依琦莲2014瑜伽服套装新款</a></dt>
 							<!-- dt 25个文字+... -->
 							<dd class="h40">依琦莲2014瑜伽服套装新款</dd>
 							<dd class="orange">￥128.00</dd>

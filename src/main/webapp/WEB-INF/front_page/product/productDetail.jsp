@@ -44,7 +44,7 @@ function addCart(){
 }
 //立即购买
 function buy(){
-	window.location.href='cart.jsp';
+	window.location.href='cart.thtml';
 }
 </script>
 </head>

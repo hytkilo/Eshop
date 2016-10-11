@@ -8,7 +8,7 @@
 <script type="text/javascript">
 //结算
 function trueBuy(){
- 	window.location.href = "productOrder.jsp";
+ 	window.location.href = "productOrder.thtml";
 }
 </script>
 </head>
